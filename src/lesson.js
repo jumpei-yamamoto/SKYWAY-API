@@ -13,7 +13,7 @@ const token = new SkyWayAuthToken({
   exp: nowInSec() + 60 * 60 * 24,
   scope: {
     app: {
-      id: "946a947c-7b87-43ac-941b-7bc8e5920ea6",
+      id: "アプリケーションID",
       turn: true,
       actions: ["read"],
       channels: [
@@ -48,7 +48,7 @@ const token = new SkyWayAuthToken({
       ],
     },
   },
-}).encode("J/kTflVF+R6LlJOlmdcVnBAmUp5qPlOo3WQYuKi7U30=");
+}).encode("シークレットキー");
 
 (async () => {
   const localVideo = document.getElementById("local-video");
