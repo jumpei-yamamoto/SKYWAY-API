@@ -1,0 +1,49 @@
+<!-- lesson.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SkyWay Tutorial</title>
+    <!-- Tailwind CSSの追加 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 p-5">
+    <p>ID: <span id="my-id"></span></p>
+    <div class="flex items-center mb-4">
+      <label for="room-name" class="mr-2">Room name:</label>
+      <input
+        id="room-name"
+        type="text"
+        class="shadow appearance-none border rounded w-auto py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      />
+      <button
+        id="join"
+        class="ml-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      >
+        Join
+      </button>
+
+      <div id="button-area" class="ml-4">
+        <!-- Buttons will be added dynamically here -->
+      </div>
+    </div>
+    <div class="flex justify-start items-center">
+      <video
+        id="local-video"
+        width="400"
+        class="rounded shadow-lg"
+        muted
+        playsinline
+      ></video>
+      <div id="remote-media-area" class="ml-10">
+        <!-- Remote videos will be added dynamically here -->
+      </div>
+    </div>
+    <script type="module" src="lesson.js"></script>
+  </body>
+</html>

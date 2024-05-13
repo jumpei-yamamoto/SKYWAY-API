@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.header,
+.footer {
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 300px; /* Adjust based on content */
+  gap: 20px;
+  padding: 20px;
+}
+
+.tutor-field,
+.youtube-thumbnail,
+.tutor-info {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.tutor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.language-select,
+.price-slidebar,
+.date-calendar,
+.sort-select,
+.search-text {
+  background: #ccc;
+  padding: 5px;
+  width: 150px; /* Adjust based on content */
+}
